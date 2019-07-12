@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+        margin: 0;
+        Padding:0;
+}
+
+/* Utilities */
+body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.4; 
+        color: #fdfaee;
+        margin: 0;
+        background: #333;
+}
+
+
+.container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 2rem;
+        overflow: hidden;
+}
+
+a {
+        text-decoration: none;
+}
+ul {
+        list-style: none;
+}
+
+.bg-light {
+        background: #fdfaee;
+}
+
+.text-primary {
+        color: #0085CA;
+     
+}
+
+.text-center {
+        text-align: center;
+        margin: auto;
+        padding-top: 25%;
+}
+
+.l-heading {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.1;
+
+}
+.m-heading {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.1;
+}
+
+.py-1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 { padding: 3rem 0;}
+
+.p-1 { padding: 1.5rem;}
+.p-2 { padding: 2rem;}
+.p-3 { padding: 3rem;}
+
+/* Navbar */
+
+
+#navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        background: #333;
+        color: #fdfaee;
+        justify-content: space-between;
+        z-index: 1;
+        padding: 1rem;
+        border-bottom: #0085CA solid 2px;
+        opacity: 0.95;
+}
+
+#navbar ul {
+        display: flex;
+        align-items: center;
+}
+
+#navbar ul li a {
+        color: #fdfaee;
+        padding: 0.75rem;
+        margin: 0 0.25rem;
+        text-decoration: none;
+}
+
+
+#navbar .logo {
+        flex: 1;
+        /* Animation */
+        animation-name: animate1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+}
+
+/* @keyframes animate1 {
+        from {
+                font-size: 0px;
+                margin-left: 20rem;
+                opacity: 0.3;
+        }
+        to {margin-left: 0rem}
+} */
+
+
+#navbar ul li a:hover {
+        background: #6a90a3;
+        border-radius: 5px;
+        transition-delay: 0.1s;
+        color: #000;
+}
+
+
+
+.btn {
+        margin-top: 2rem;
+        padding: 0.5rem 2rem;
+        background: #6a90a3;
+        border-radius: 5px;
+        color: #333;
+}
+
+.btn a {
+        color: #000;
+}
+
+.btn:hover,
+.btn:active {
+        margin-top: 2rem;
+        padding: 0.5rem 2rem;
+        background: #0087cad3;
+        border-radius: 5px;
+        color: #fdfaee;
+}
+/* showcase */
+
+#showcase {
+        background: #333 url('../IMG/slc.jpeg')
+        no-repeat center center/cover;
+        height: 100vh;
+        position: relative;      
+        color: fdfaee;
+        /* box-shadow: inset 50px 50px 250px #000000, inset 0px 50px 250px #000000; */
+        
+
+}
+/* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+} */
+#showcase .showcase-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        /* overlay  */
+        position: absolute;
+        top: 65;
+        bottom: -65;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7)
+}
+
+/* Home-overview */
+#what .containter .m-heading.h2 {
+        border-bottom: #333 dotted 1px;
+}
+.items {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+}
+
+.item{
+        flex: 1;
+        background: #6a90a3;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 5px;
+
+        box-shadow: 1px 1px 8px #000;
+}
+
+#box1 {
+        transition-property: background transform;
+        transition-duration: 0.4s;
+        transition-delay: 0.4s;
+}
+
+#box1:hover {
+        background: rgb(122, 122, 122);
+        transform: translateY(-15px);
+        }
+        
+#box2 {
+                transition-property: background transform;
+                transition-duration: 0.4s;
+                transition-delay: 0.4s;
+        }
+        
+#box2:hover {
+        background: rgb(122, 122, 122);
+        transform: translateY(-15px);
+}
+#box3 {
+                transition-property: background transform;
+                transition-duration: 0.4s;
+                transition-delay: 0.4s;
+        }
+        
+#box3:hover {
+        background: rgb(122, 122, 122);
+        transform: translateY(-15px);
+}
+#what .container h2 {
+        color: #333;
+        text-align: center;
+}
+#what .container h3 {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        text-align: center;
+        padding-top: 1rem;
+}
+
+#what .container p {
+        font-family: 'Roboto', sans-serif;
+        color: #ffdfaee;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+}
+
+#what .container i {
+        margin: 1rem;
+}
+/* Footer */
+
+#main-footer {
+        height: 100px;
+        background: #333;
+        text-align: center;
+        margin:auto;
+        padding: 1rem;
+        border-top: #6a90a3 2px solid;
+}
+
+.about {
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+}
+
+.about .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: #6a90a3;
+        border-radius: 5px;
+        box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+
+.about .box p {
+        padding: 1rem;
+        text-align: center;
+}
+.about .box h3 {
+        padding-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+}
+
+.reviews {
+        color: #000;
+        display: flex;
+        padding: 1rem;
+}
+
+.reviews .review-1 {
+        background-color: #e6e3db; 
+background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+}
+
+.reviews .review-1 h2 {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: #333 dotted 1px;
+        
+}
+.reviews .review-1 h3 {
+        padding: 1rem;
+
+}
+.reviews .review-1 p {
+        padding: 1rem;
+        
+}
+
+.reviews .review-1 img {
+        
+        width: 100px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+        padding: 1rem;
+}
+
+/* Contact */
+
+.contact {
+        display: flex;
+
+         
+}
+
+
+
+.form-section {
+background-color: #e6e3db; 
+background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+flex: 1;
+width: 100%;
+box-sizing: border-box;
+
+}
+
+.form-section h2,
+.form-section p,
+.form-section .form  .form-group {
+        text-align: center;
+}
+
+}
+.rates-contact {
+        flex:1 ;
+        
+}
+
+.contact .form-section {
+        
+}
+.contact .form-section label {
+        display: block;
+        
+}
+
+.forms {
+}
+
+.contact .form-section .form .form-group input, 
+.contact .form-section .form .form-group textarea {
+        width: 10rem;
+}
+
+.contact .form-section p {
+        color: #000;
+}
+
+.contact .form-section h2 {
+        border-bottom: #000 dotted 1px;
+        color: #0085CA;
+}
+
+input[type="submit"] {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: #fff;
+        background: #333;
+        border: none;
+        margin-top: 1rem;
+        width: 10rem;
+}
+::placeholder {
+        text-align: center;
+        color: rgb(154, 186, 202);
+}
+input[type="submit"]:hover {
+        background-color: #e6e3db;
+        color: #0085CA;
+}
+
+.rates-contact {
+        flex: 1;   
+        padding-left: 20px;
+        
+}
+
+
+.rates-contact .contact-info i
+
+{       padding: 1rem;
+        background: #000;
+}
+
+.rates-contact .contact-info i {
+        padding: 1rem;
+        border-radius: 50%;
+}
+
+
+.contact-info {
+        display: flex;
+        flex-direction: column;
+}
+
+.contact-info .phone,
+.contact-info .email
+ {
+        flex: 1;
+       margin: 4rem;
+       
+}
+
+/*
+.form-group {
+        padding: 0.4rem;
+}
+
+.rates-contact {
+        flex: 1;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
+} */
+
+/* #0085CA  */
+
+@media (max-width: 600px) {
+        #navbar {
+                display: block;
+                text-align: center;
+        }
+
+        #navbar ul {
+                padding: 0 3rem;
+        }
+
+        .items, .about {
+                display: block;
+                
+                margin: 0;
+        }
+        
+        .item {
+                margin-bottom: 1rem;
+        }
+        
+        .about .box {
+                text-align: center;
+                margin: auto;
+                
+        }
+
+        .contact.contact {
+                display: block;
+        }
+
+}
